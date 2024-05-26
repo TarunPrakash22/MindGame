@@ -1,5 +1,5 @@
 import random, time, turtle
-import MindGame.colorPallette as cP
+import colorPallette as cP
 import tkinter as tk
 class mindGameOOPS:
     def __init__(self) -> None:
@@ -38,7 +38,7 @@ class mindGameOOPS:
         self.pen = turtle.Turtle()
         self.pen.hideturtle()
 
-    def startup(self):
+    def startUp(self):
         self.scoreTurtle.color('white')
         self.scoreTurtle.penup()
         self.scoreTurtle.goto(350,350)
@@ -125,7 +125,7 @@ class mindGameOOPS:
 
     def startGame(self):
         self.createTurtles()
-        self.startup()
+        self.startUp()
         self.timer('The game begins in ',1)
         self.scoreBoard()
         self.colorGen()
